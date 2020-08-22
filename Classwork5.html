@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Classwork 5</title>
+</head>
+
+<body bgcolor="white">
+    <p>Testing the paragraph 1 </p>
+    <script>
+        document.bgColor = "red";
+    </script>
+
+    <br />
+
+    <p>Paragraph – Test 1</p>
+    <script>
+        // script block 1 
+        alert("First Script Block");
+    </script>
+    <p> Paragraph – Test 2</p>
+    <script>
+        // script block 2 
+        alert("Second Script Block");
+    </script>
+
+    <p id="results"></p>
+    <script>
+        document.getElementById("results").innerHTML = "Hello World!";
+    </script>
+
+    <br />
+
+    <script>
+        var myFirstVariable;
+        myFirstVariable = "Hello";
+        alert(myFirstVariable);
+        myFirstVariable = 54321;
+        alert(myFirstVariable);
+    </script>
+
+    <br />
+
+    <script>
+        var firstNumber = 15;
+        var secondNumber = 10;
+        var answer;
+        answer = 15 / 10;
+        alert(answer);
+        alert(15 / 10);
+        answer = firstNumber / secondNumber;
+        alert(answer);
+    </script>
+
+    <br />
+
+    <script>
+        // Equation is °C = 5/9 (°F - 32).
+        var degFahren = prompt("Enter the degrees in Fahrenheit", 50);
+        var degCent;
+        degCent = 5 / 9 * (degFahren - 32);
+        alert(degCent);
+    </script>
+
+    <br />
+
+    <script>
+        var greetingString = "Hello";
+        var myName = prompt("Please enter your name", "");
+        var concatString;
+        document.write(greetingString + " " + myName + "<br/>");
+        concatString = greetingString + " " + myName;
+        document.write(concatString);
+    </script>
+
+    <br />
+
+    <script>
+        // Equation is °C = 5/9 (°F - 32).
+        var degFahren = prompt("Enter the degrees in Fahrenheit", 50);
+        var degCent;
+        degCent = 5 / 9 * (degFahren - 32);
+        alert(degFahren + "\xB0 Fahrenheit is " + degCent + "\xB0 centigrade");
+    </script>
+
+    <br />
+
+    <script>
+
+        var firstNumber = prompt("Enter the first number", 0);
+        var secondNumber = prompt("Enter the second number", 0);
+        var theTotal;
+        theTotal = parseFloat(firstNumber) + parseFloat(secondNumber);
+
+        document.write(firstNumber + "<br/>");
+        document.write(secondNumber + "<br/>");
+        document.write(theTotal);
+
+
+    </script>
+
+</body>
+
+</html>
